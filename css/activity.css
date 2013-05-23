@@ -1,5 +1,5 @@
 body, #canvas {
-  background-color: #ffffff;
+  background-color: #white;
 }
 
 #toolbar #activity-button {
@@ -10,21 +10,28 @@ body, #canvas {
   text-align: center;
 }
 
-#color-icons button {
+#color-icons button, #icon-current {
   background-color: transparent;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(../activity/activity-icon.svg);
-  padding: 0;
   margin: 0;
   width: 100px;
   height: 100px;
-  border: 0;
-  border-radius: 0;
+  border-size: 10px;
+  border-radius: 15px;
 }
 
-#color-icons button#icon-center {
-  border-left: 2px solid #808080;
-  border-right: 2px solid #808080;
+#color-icons button:hover {
+  background-color: #d1d1d1;
+  border-color: #d1d1d1;
+}
+
+#color-icons button:active {
+  background-color: white;
+}
+
+#icon-current {
+  display: inline-block;
 }
