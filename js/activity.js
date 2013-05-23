@@ -10,8 +10,10 @@ define(function (require) {
 
         // Colorize the activity icon.
         var activityButton = document.getElementById("activity-button");
+        var iconCenter = document.querySelector("#icon-center");
         activity.getXOColor(function (colors) {
             icon.colorize(activityButton, colors);
+            icon.colorize(iconCenter, colors);
         });
 
         // Make the activity stop with the stop button.
