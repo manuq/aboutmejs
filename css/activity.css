@@ -1,0 +1,30 @@
+body, #canvas {
+  background-color: #ffffff;
+}
+
+#toolbar #activity-button {
+  background-image: url(../activity/activity-icon.svg);
+}
+
+#canvas {
+  text-align: center;
+}
+
+#color-icons button {
+  background-color: transparent;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../activity/activity-icon.svg);
+  padding: 0;
+  margin: 0;
+  width: 100px;
+  height: 100px;
+  border: 0;
+  border-radius: 0;
+}
+
+#color-icons button#icon-center {
+  border-left: 2px solid #808080;
+  border-right: 2px solid #808080;
+}
